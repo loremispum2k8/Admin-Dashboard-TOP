@@ -345,3 +345,330 @@ svg{
 
 
 
+@media screen and (max-width:1240px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 260px 240px 1fr;
+    }
+    .header{
+        grid-area: 2/2/3/1;
+        z-index: 2;
+    }
+    .sidebar{
+        grid-area: 1/1/2/1;
+        z-index: 3;
+    }
+    .main{
+        grid-area: 3/1/4/1;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        background-color: #e4ebf1;
+        z-index: 1;
+        gap: 26px;
+    }
+    .logo img{
+        width: 50px;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+
+    
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px 0px 40px;
+        background-color: var(--blue);
+        gap: 26px;
+    }
+    .logo p{
+        color: white;
+        font-weight: 600;
+        font-size: max(1vw ,26px);
+    }
+    .community-links, .settings-links{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .link:hover{
+        background-color:rgb(62, 170, 237);
+        border-radius: 20px;
+    }
+
+    .header{
+        padding-bottom: 30px;
+    }
+    .header-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+    .header-buttons button{
+        background-color: var(--blue);
+        color: white;
+        border: none;
+        height: 28px;
+        width: 140px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.1s;
+    }
+
+    .top-header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: max(80px, 10vw);
+    }
+    
+}
+
+
+
+@media screen and (max-width:765px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 260px 260px 1fr;
+    }
+    .header{
+        grid-area: 2/2/3/1;
+        z-index: 2;
+    }
+    .sidebar{
+        grid-area: 1/1/2/1;
+        z-index: 3;
+    }
+    .main{
+        grid-area: 3/1/4/1;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #e4ebf1;
+        z-index: 1;
+        gap: 26px;
+    }
+    .logo img{
+        width: 50px;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+
+    
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px 0px 2px 40px;
+        background-color: var(--blue);
+        gap: 26px;
+        overflow-y: scroll;
+    }
+    .sidebar{
+        padding-bottom: 30px;
+    }
+    .logo p{
+        color: white;
+        font-weight: 600;
+        font-size: max(1vw ,26px);
+    }
+    .community-links, .settings-links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .link:hover{
+        background-color:rgb(62, 170, 237);
+        border-radius: 20px;
+    }
+
+    .header{
+        gap: 26px;
+        padding-top: 30px;
+    }
+    .bottom-header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 26px;
+    }
+    .header-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+    }
+    .header-buttons button{
+        background-color: var(--blue);
+        color: white;
+        border: none;
+        height: 34px;
+        width: 135px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.1s;
+    }
+    .top-header{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .account-notifications{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:550px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 260px 400px 1fr;
+    }
+    .header{
+        grid-area: 2/2/3/1;
+        z-index: 2;
+    }
+    .sidebar{
+        grid-area: 1/1/2/1;
+        z-index: 3;
+    }
+    .main{
+        grid-area: 3/1/4/1;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #e4ebf1;
+        z-index: 1;
+        gap: 26px;
+    }
+    .logo img{
+        width: 50px;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+
+    .search-bar{
+        width: 100%;
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding:30px 0px 30px 0px;
+        background-color: var(--blue);
+        gap: 26px;
+        overflow-y: scroll;
+    }
+    .logo{
+        width: fit-content;
+        padding-right: 10px;
+    }
+    .logo p{
+        color: white;
+        font-weight: 600;
+        font-size: max(1vw ,26px);
+    }
+    .community-links, .settings-links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .link:hover{
+        background-color:rgb(62, 170, 237);
+        border-radius: 20px;
+    }
+
+    .header{
+        gap: 26px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .bottom-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 26px;
+    }
+    .header-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+    .header-buttons button{
+        background-color: var(--blue);
+        color: white;
+        border: none;
+        height: 34px;
+        width: 135px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.1s;
+    }
+    .top-header{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0px;
+        width: 80vw;
+    }
+    .profile-salutations{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+    .account-notifications{
+        display: none;
+    }
+    .profile-salutations h2{
+        font-size: 18px;
+    }
+    .profile-text{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+
+
+    .cards{
+        display: grid;
+        gap: 26px;
+        grid-template-columns: 1fr;
+    }
+    .side-main{
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        min-width: 200px;
+    }
+}
