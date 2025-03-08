@@ -27,6 +27,7 @@ svg{
     grid-template-columns: 2fr 1fr;
     background-color: #e4ebf1;
     z-index: 1;
+    gap: 26px;
 }
 .logo img{
     width: 50px;
@@ -40,7 +41,7 @@ svg{
     flex-direction: column;
     padding: 20px 50px 20px 50px;
     justify-content: space-between;
-    box-shadow: 0px 5px 10px 10px grey;
+    box-shadow: 0px 2px 3px 3px #d6dde4;
 }
 .top-header{
     display: flex;
@@ -83,7 +84,7 @@ svg{
 .account-notifications svg{
     cursor: pointer;
 }
-.account-notifications img{
+.account-notifications img, .trend-profile img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -203,7 +204,144 @@ svg{
 
 
 
+.main{
+    padding: 40px 40px 80px 26px;
+}
 .cards-container{
     display: flex;
     flex-direction: column;
+    gap: 16px;
 }
+.main-title{
+    font-size: 21px;
+    font-weight: 600
+}
+.cards{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    padding: 26px 26px 26px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #d6dde4;
+    cursor: pointer;
+    transition: all 0.1s;
+    border-left: 10px solid rgb(237, 166, 0);
+}
+.card:hover{
+    box-shadow: 5px 5px 2px 2px #d6dde4;
+    border-left: 10px solid white;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.card-text h2{
+    font-size: 18px;
+}
+.card-text p{
+    font-size: 16px;
+    color: rgb(112, 112, 112);
+}
+.card-icons{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 26px;
+}
+.card-icons svg{
+    cursor: pointer;
+}
+
+.side-main{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    min-width: 240px;
+}
+.announcements-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 26px 32px 26px 32px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #d6dde4;
+    gap: 16px;
+    transition: all 0.1s;
+}
+.informations:hover{
+    box-shadow: 5px 5px 2px 2px #d6dde4;
+}
+.informations div:first-child, .informations div:nth-child(2){
+    padding-bottom: 16px;
+    border-bottom: 1px solid lightgrey;
+}
+.informations div{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    cursor: pointer;
+}
+.informations h2{
+    font-size: 15px;
+}
+.informations p{
+    font-size: 13px;
+    color: rgb(112, 112, 112);
+}
+
+.trending-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.profiles-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 26px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #d6dde4;
+    gap: 26px;
+    transition: all 0.1s;
+}
+.profiles-container:hover{
+    box-shadow: 5px 5px 2px 2px #d6dde4;
+}
+.trend-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.trend-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.trend-text h3{
+    font-size: 15px;
+}
+.trend-text p{
+    font-size: 15px;
+    color: rgb(112, 112, 112);
+}
+
+
+
